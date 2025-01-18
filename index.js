@@ -25,12 +25,16 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     // 🚨 Generate certificate content dynamically
-    certificateContent.innerHTML =
+    function generateCertificatecontent() {
+      const name = document.getElementById('studentName').value;
+      const message = document.getElementById('personalMessage').value;
+    }
+    /** certificateContent.innerHTML = 
       /** <h3>${studentName}</h3> **/
-    ;
+
 
     // Display the modal
-    modal.style.display = 'block';
+    /** modal.style.display = 'none';**/
 
     // Clear the form inputs
     studentNameInput.value = '';
@@ -39,7 +43,8 @@ document.addEventListener('DOMContentLoaded', function () {
   });
 
   //  🚨 Close the modal when the close button is clicked
-  closeModal.('', function () {
+  function closeModal() {
+    document.getElementById("certificateContent").style.display = "none";
 
   });
-});
+;
