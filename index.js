@@ -1,3 +1,7 @@
+let studentName;
+let personalMessage;
+let courseName;
+
 document.addEventListener('DOMContentLoaded', function () {
   const cardForm = document.getElementById('cardForm');
   const modal = document.getElementById('modal');
@@ -29,31 +33,35 @@ document.addEventListener('DOMContentLoaded', function () {
       studentName = document.getElementById('studentName').value.trim();
       personalMessage = document.getElementById('personalMessage').value.trim();
       courseName = document.getElementById('courseName').value.trim();
-    }
 
-    //Making sure the fields are filled.
-    if (!studentName || !personalMessage || !courseName) { alert('Please fill in all fields'); return; }
 
-    //Creating a certificate template
-    const certificateTemplate =
-      `<h3> ${studentName} </h3>
+      //Making sure the fields are filled.
+      if (!studentName || !personalMessage || !courseName) { alert('Please fill in all fields'); return; }
+
+      //Creating a certificate template
+      const certificateTemplate =
+        `<h3> ${studentName} </h3>
      <p> ${personalMessage} </p>
     <p> ${courseName} </p>`
-      ;
+        ;
 
-    //Display the generated certificate content.
-    const certificateContainer = document.getElementById('certificiate-container');
-    certificateContainer.innerHTML = certificateTemplate;
+      //Display the generated certificate content.
+      const certificateContainer = document.getElementById('certificiate-container');
+      certificateContainer.innerHTML = certificateTemplate;
+    }
 
     const certificateContent = document.getElementById('certificateContent');
-    certificateContent.innerHTML = generateCertificatecontent;
+    certificateContent.innerHTML = certificateTemplate;
+
+    const modal = document.getElementById('modal');
     modal.style.display = 'block';
+
 
     studentNameInput.value = '';
     personalMessageInput.value = '';
     if (courseNameInput) courseNameInput.value = '';
+  }
 
-    return certificateContent;
 
 
     /** certificateContent.innerHTML = 
@@ -67,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Clear the form inputs
 
-  });
+  );
 
   //  🚨 Close the modal when the close button is clicked
   closeModal.addEventListener('click', function () {
