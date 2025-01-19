@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
     certificateContent.innerHTML = generateCertificatecontent;
     modal.style.display = 'block';
 
+    return certificateContent;
 
     // Display the modal
     /** modal.style.display = 'none';**/
