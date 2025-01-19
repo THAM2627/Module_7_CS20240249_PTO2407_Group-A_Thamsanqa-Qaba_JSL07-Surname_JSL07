@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
     //Making sure the fields are filled.
     if (!studentName || !personalMessage || !courseName) { alert('Please fill in all fields'); return; }
 
+    //Display the generated certificate content
+    const certificateTemplate = 
+
     const certificateContent = document.getElementById('certificateContent');
     certificateContent.innerHTML = generateCertificatecontent;
     modal.style.display = 'block';
@@ -48,7 +51,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /** certificateContent.innerHTML = 
       /** <h3>${studentName}</h3> **/
 
-    //Display the generated certificate content
+
 
 
     // Display the modal
