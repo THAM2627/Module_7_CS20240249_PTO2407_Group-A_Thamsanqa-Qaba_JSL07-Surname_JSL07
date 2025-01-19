@@ -39,21 +39,20 @@ document.addEventListener('DOMContentLoaded', function () {
       if (!studentName || !personalMessage || !courseName) { alert('Please fill in all fields'); return; }
 
       //Creating a certificate template
-      const certificateTemplate =
-        `<h3> ${studentName} </h3>
+      const certificateTemplate = `
+    <h3> ${studentName} </h3>
      <p> ${personalMessage} </p>
     <p> ${courseName} </p>`
         ;
 
-      //Display the generated certificate content.
-      const certificateContainer = document.getElementById('certificiate-container');
-      certificateContainer.innerHTML = certificateTemplate;
+      return certificateTemplate
+
+
     }
+    //Display the generated certificate content.
 
     const certificateContent = document.getElementById('certificateContent');
-    certificateContent.innerHTML = certificateTemplate;
-
-    const modal = document.getElementById('modal');
+    certificateContent.innerHTML = generateCertificatecontent();
     modal.style.display = 'block';
 
 
