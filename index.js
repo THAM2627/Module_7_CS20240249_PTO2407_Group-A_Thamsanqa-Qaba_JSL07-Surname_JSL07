@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 🚨 Generate certificate content dynamically
     function generateCertificatecontent() {
-      const name = document.getElementById('studentName').value;
-      const message = document.getElementById('personalMessage').value;
-      const course = document.getElementById('courseName').value;
+      const studentName = document.getElementById('studentName').value.trim();
+      const personalMessage = document.getElementById('personalMessage').value;
+      const courseName = document.getElementById('courseName').value;
     }
 
     const certificateContent = document.getElementById('certificateContent');
