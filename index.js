@@ -31,16 +31,18 @@ document.addEventListener('DOMContentLoaded', function () {
       const course = document.getElementById('courseName').value;
     }
 
-    /** certificateContent.innerHTML = 
-      /** <h3>${studentName}</h3> **/
-
-    //Display the generated certificate content
-
     const certificateContent = document.getElementById('certificateContent');
     certificateContent.innerHTML = generateCertificatecontent;
     modal.style.display = 'block';
 
     return certificateContent;
+
+
+    /** certificateContent.innerHTML = 
+      /** <h3>${studentName}</h3> **/
+
+    //Display the generated certificate content
+
 
     // Display the modal
     /** modal.style.display = 'none';**/
