@@ -36,12 +36,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Creating a certificate template
     const certificateTemplate =
-      '< h3 > ${ studentName } </h3>'
-    '<p> ${personalMessage} </p>'
-    '<p> ${courseName} </p>';
+      `<h3> ${studentName} </h3>
+     <p> ${personalMessage} </p>
+    <p> ${courseName} </p>`
+      ;
 
     //Display the generated certificate content.
-    const certificateContainer = document.getElementById('cerficiate-container');
+    const certificateContainer = document.getElementById('certificiate-container');
     certificateContainer.innerHTML = certificateTemplate;
 
     const certificateContent = document.getElementById('certificateContent');
