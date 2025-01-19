@@ -14,6 +14,9 @@ document.addEventListener('DOMContentLoaded', function () {
   cardForm.addEventListener('submit', function (e) {
     e.preventDefault();
 
+    //Call Generate Certificate function.
+    const generateCertificatecontent = document.getElementById('certificateContent'); certificateContent.innerHTML = generateCertificatecontent();
+
     // 🚨 Get input values
     const studentNameInput = document.getElementById('studentName');
     const personalMessageInput = document.getElementById('personalMessage');
