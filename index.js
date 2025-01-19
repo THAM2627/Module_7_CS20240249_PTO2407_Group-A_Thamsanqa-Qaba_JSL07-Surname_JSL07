@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const personalMessageInput = document.getElementById('personalMessage');
     const courseNameInput = document.getElementById('courseName');
 
-    const studentName = studentNameInput.value;
+    studentName = studentNameInput.value;
     const personalMessage = personalMessageInput.value;
     const courseName = courseNameInput ? courseNameInput.value : "a course"; // Fallback to "a course" if no input
 
@@ -26,9 +26,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 🚨 Generate certificate content dynamically
     function generateCertificatecontent() {
-      const studentName = document.getElementById('studentName').value.trim();
-      const personalMessage = document.getElementById('personalMessage').value.trim();
-      const courseName = document.getElementById('courseName').value.trim();
+      studentName = document.getElementById('studentName').value.trim();
+      personalMessage = document.getElementById('personalMessage').value.trim();
+      courseName = document.getElementById('courseName').value.trim();
     }
 
     //Making sure the fields are filled.
@@ -36,9 +36,9 @@ document.addEventListener('DOMContentLoaded', function () {
 
     //Creating a certificate template
     const certificateTemplate =
-      '<h3>${studentName}</h3>'
-    '<p>${personalMessage}</p>'
-    '<p>${courseName}</p>';
+      '< h3 > ${ studentName } </h3>'
+    '<p> ${personalMessage} </p>'
+    '<p> ${courseName} </p>';
 
     //Display the generated certificate content.
     const certificateContainer = document.getElementById('cerficiate-container');
