@@ -34,8 +34,12 @@ document.addEventListener('DOMContentLoaded', function () {
     //Making sure the fields are filled.
     if (!studentName || !personalMessage || !courseName) { alert('Please fill in all fields'); return; }
 
-    //Display the generated certificate content
+    //Creating a certificate template
     const certificateTemplate = 
+    <h3>${studentName}</h3>
+    <p>${personalMessage}</p>
+    <p>${courseName}</p>;
+
 
     const certificateContent = document.getElementById('certificateContent');
     certificateContent.innerHTML = generateCertificatecontent;
