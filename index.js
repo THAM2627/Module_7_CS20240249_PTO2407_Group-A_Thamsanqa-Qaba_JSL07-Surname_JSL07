@@ -27,13 +27,13 @@ document.addEventListener('DOMContentLoaded', function () {
     // 🚨 Generate certificate content dynamically
     function generateCertificatecontent() {
       const studentName = document.getElementById('studentName').value.trim();
-      const personalMessage = document.getElementById('personalMessage').value;
-      const courseName = document.getElementById('courseName').value;
+      const personalMessage = document.getElementById('personalMessage').value.trim();
+      const courseName = document.getElementById('courseName').value.trim();
     }
 
-    const certificateContent = document.getElementById('certificateContent');
-    certificateContent.innerHTML = generateCertificatecontent;
-    modal.style.display = 'block';
+    //Making sure the fields are filled.
+    if (!studentName || !personalMessage || !courseName) { alert('Please fill in all fields'); return; }
+
 
     studentNameInput.value = '';
     personalMessageInput.value = '';
