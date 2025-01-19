@@ -35,6 +35,10 @@ document.addEventListener('DOMContentLoaded', function () {
     certificateContent.innerHTML = generateCertificatecontent;
     modal.style.display = 'block';
 
+    studentNameInput.value = '';
+    personalMessageInput.value = '';
+    if (courseNameInput) courseNameInput.value = '';
+
     return certificateContent;
 
 
@@ -48,9 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /** modal.style.display = 'none';**/
 
     // Clear the form inputs
-    studentNameInput.value = '';
-    personalMessageInput.value = '';
-    if (courseNameInput) courseNameInput.value = '';
+
   });
 
   //  🚨 Close the modal when the close button is clicked
