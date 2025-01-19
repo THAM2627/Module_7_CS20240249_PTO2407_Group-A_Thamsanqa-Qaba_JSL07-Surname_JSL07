@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // 🚨 Generate certificate content dynamically
     function generateCertificatecontent() {
-      studentName = document.getElementById('studentName').value.trim();
+      studentNameCertificate = document.getElementById('studentName').value.trim();
       personalMessage = document.getElementById('personalMessage').value.trim();
       courseName = document.getElementById('courseName').value.trim();
 
@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
       //Creating a certificate template
       const certificateTemplate = `
-    <h3> ${studentName} </h3>
+    <h3> ${studentNameCertificate} </h3>
      <p> ${personalMessage} </p>
     <p> ${courseName} </p>`
         ;
@@ -82,5 +82,3 @@ document.addEventListener('DOMContentLoaded', function () {
 
   });
 });
-
-generateCertificatecontent
