@@ -30,6 +30,7 @@ document.addEventListener('DOMContentLoaded', function () {
       const message = document.getElementById('personalMessage').value;
       const course = document.getElementById('courseName').value;
     }
+
     /** certificateContent.innerHTML = 
       /** <h3>${studentName}</h3> **/
 
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     const certificateContent = document.getElementById('certificateContent');
     certificateContent.innerHTML = generateCertificatecontent;
+    modal.style.display = 'block';
 
 
     // Display the modal
