@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function generateCertificatecontent() {
       const name = document.getElementById('studentName').value;
       const message = document.getElementById('personalMessage').value;
+      const course = document.getElementById('courseName').value;
     }
     /** certificateContent.innerHTML = 
       /** <h3>${studentName}</h3> **/
