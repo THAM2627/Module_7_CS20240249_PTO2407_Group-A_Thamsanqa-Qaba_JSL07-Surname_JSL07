@@ -34,6 +34,9 @@ document.addEventListener('DOMContentLoaded', function () {
     //Making sure the fields are filled.
     if (!studentName || !personalMessage || !courseName) { alert('Please fill in all fields'); return; }
 
+    const certificateContent = document.getElementById('certificateContent');
+    certificateContent.innerHTML = generateCertificatecontent;
+    modal.style.display = 'block';
 
     studentNameInput.value = '';
     personalMessageInput.value = '';
