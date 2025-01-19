@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
   //  🚨 Close the modal when the close button is clicked
   function closeModal() {
-    document.getElementById("certificateContent").style.display = "none";
+    document.getElementById("modal").style.display = "none";
 
   };
 });
